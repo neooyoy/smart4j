@@ -19,6 +19,6 @@ public class HelloServlet extends HttpServlet {
         String curTime = dateFormat.format(new Date());
 
         req.setAttribute("curTime", curTime);
-        req.getRequestDispatcher("/WEB-INF/jsp/hello.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/view/test/hello.jsp").forward(req, resp);
     }
 }
